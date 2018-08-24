@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<title>{% block title %}BHOLA TRANSPORT{% endblock %}</title>
+{% load staticfiles %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="{%  static 'LogoSample_ByTailorBrands.jpg' %}"/>
+<link rel="stylesheet" href="/static/home/css/style.css">
+<link rel="stylesheet" href="/static/home/css/sliderPro.css">
+<script src="/static/home/js/slider.js"></script>
+<link rel="stylesheet" type="text/css" href='/static/home/css/slider.css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<script src="https://www.solodev.com/assets/slider-pro/jquery.sliderPro.min.js"></script>
+<script src="https://www.solodev.com/assets/slider-pro/sliderPro.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<link rel="stylesheet" href="/static/home/css/font-awesome.css">
+<link rel="stylesheet" href="/static/home/css/style_form.css">
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<style>
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Lato', sans-serif; letter-spacing: 0px; font-size: 16px; color: #62686c; font-weight: 400; line-height: 28px; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300; color: #11181f; margin: 0px 0px 15px 0px; font-family: 'Lato', sans-serif; }
+h1 { font-size: 44px; }
+h2 { font-size: 38px; }
+h3 { font-size: 24px; font-weight: 400; }
+h4 { font-size: 20px; font-weight: 400; line-height: 30px; }
+h5 { font-size: 16px; font-weight: 400; }
+h6 { font-size: 12px; font-weight: 400; }
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+ul, ol { }
+a { text-decoration: none; color: #62686c; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f67800; }
+
+.content{padding-top:80px; padding-bottom:80px;}
+.mb40{margin-bottom:40px;}
+.team-block { margin-bottom: 20px; }
+.team-content { position: absolute; background-color: rgba(17, 24, 31, 0.8); bottom: 0px; display: inline-block; width: 100%; color: #fff; padding: 30px; }
+.team-img { position: relative; }
+.team-img img { width: 100%; }
+.team-title { }
+.team-meta { color: #9da4aa; font-weight: 400; font-size: 16px; }
+.overlay { border-radius: 0px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: 1s ease; background-color: #11181f; }
+.team-img:hover .overlay { opacity: .8; }
+.team-img:hover .team-content { opacity: 0; }
+.text { color: #fff; position: absolute; top: 30%; left: 30%; transform: translate(-26%, -26%); -ms-transform: translate(-26%, -26%); right: 0; font-weight: 400; font-size: 16px; }
+</style>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+  .carousel-inner img {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); /* make all photos black and white */
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-hover-opacity" id="myNavbar">
+    <a  href="{% url 'home:index' %}" class="w3-bar-item w3-button w3-wide">BHOLA</a>
+    {% if user.is_authenticated %}
+    <a class="w3-bar-item w3-button w3-wide">Welcome,{{user.username}}</a>
+     <div class="w3-right w3-hide-small">
+       <a href="{% url 'booking:booking' %}" class="w3-bar-item w3-button"><i class="fa fa-cart-arrow-down" ></i> Book </a>
+       <!-- <a href="{% url 'bookings:book_detail' %}" class="w3-bar-item w3-button"><i class="fa fa-list" ></i> Bookings </a> -->
+       <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info" ></i> ABOUT</a>
+       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+       <a href="{% url 'contactus:contactus' %}" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    <a href="{% url 'accounts:logout' %}" class="w3-bar-item w3-button"><i class="fa fa-sign-out"></i>LogOut</a>
+    {% else %}
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info" ></i> ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="{% url 'contactus:contactus' %}" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+      <a href="{% url 'accounts:login' %}" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i>SIGN IN</a>
+      <a href="{% url 'accounts:signup' %}" class="w3-bar-item w3-button"><i class="fa fa-user"></i>SIGN UP</a>
+
+      {% endif %}
+  </div>
+
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+  <a href="#signout" onclick="w3_close()" class="w3-bar-item w3-button">SIGN UP</a>
+
+</nav>
+
+
+{% block body %}
+{% endblock %}
+</body>
+</html>

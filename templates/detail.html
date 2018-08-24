@@ -1,0 +1,46 @@
+{% extends 'base_nav.html' %}
+{% block login_active %}active{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid songs-container">
+    <div class="row">
+
+      <div class="col-sm-8 col-md-9">
+                  <div class="panel panel-default">
+                      <div class="panel-body">
+
+                          <h3>All Bookings</h3>
+
+                          {% if error_message %}
+                              <p><strong>{{ error_message }}</strong></p>
+                          {% endif %}
+
+                          <table class="table">
+                              <thead>
+                              <tr>
+                                  <th>Source</th>
+                                  <th>Destination</th>
+                                  <th>Material</th>
+                                  <th>Truck Type</th>
+                                  <th>Date</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              {% for order in booking_set.all %}
+                                  <tr>
+                                      <td>{{ order.source }}</td>
+                                      <td>{{ order.destination }}</td>
+                                      <td>{{ order.material }}</td>
+                                      <td>{{ order.truck_type }}</td>
+                                      <td>{{ order.date }}</td>
+                    ]
+                                  </tr>
+                              {% endfor %}
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+
+{% endblock %}

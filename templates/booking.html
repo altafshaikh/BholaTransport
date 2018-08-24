@@ -1,0 +1,44 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Booking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <meta name="keywords" content="Curved Contact Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates,
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design"> -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="/static/home/css/style_contactus.css" rel='stylesheet' type='text/css' />
+<!-- <link href="/static/home/css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<!--//fonts-->
+</head>
+<body>
+<!--background-->
+<!-- login -->
+<h1>BOOK HERE</h1>
+	        <div class="login-w3l">
+			<div class="top-img-agileits-w3layouts">
+				<h2 class="sub-head-w3-agileits">BOOKING</h2>
+				<p>Fillout the form below</p>
+				<div class="login-form">
+				<form method="post">
+					{% csrf_token %}
+					{{form.as_p }}
+					<input type="submit" value="Book">
+				</form>
+			</div>
+			</div>
+
+			<!-- //login -->
+				</div>
+				<div class="clear"></div>
+			<div class="footer-agileits">
+			<p>© 2018 BHOLA Contact Form. All Rights Reserved | Design By TEAM BHOLA </p>
+			</div>
+			<!--//login-->
+</body>
+</html>

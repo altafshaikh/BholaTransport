@@ -1,0 +1,295 @@
+{% extends 'home/base_nav.html' %}
+{% block login_active %}active{% endblock %}
+
+
+{% block body %}
+
+<style>
+@media only screen and (min-width: 640px){
+    .oddClass {
+        float: right;
+        width: 47%;
+    }
+    .evenClass {
+        float: left;
+        width: 47%;
+    }
+}
+</style>
+<script type="text/javascript">
+ijQuery( document ).ready(function(){
+    ijQuery( 'form.email-form .input-holder:odd' ).addClass('oddClass');
+    ijQuery( 'form.email-form .input-holder:even' ).addClass('evenClass');
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+
+
+<!-- Header with full-height image -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img id="home" src="/static/home/images/bg3.jpg"  width="1200" height="700">
+        <div class="carousel-caption">
+          <!-- <h3>New York</h3> -->
+         <!--  <p>The atmosphere in New York is lorem ipsum.</p> -->
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/static/home/images/bg4.jpg"  width="1200" height="700">
+        <div class="carousel-caption">
+         <!--  <h3>Chicago</h3> -->
+         <!--  <p>Thank you, Chicago - A night we won't forget.</p> -->
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/static/home/images/bg2.jpg"  width="1200" height="700">
+        <div class="carousel-caption">
+          <!-- <h3>LA</h3> -->
+         <!--  <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon " aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon " aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+  <!-- <div class="w3-display-right w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"></span>
+    <form>
+    <div class="agile-login">
+		<h1>Book Here</h1>
+		<div class="wrapper">
+
+			<div class="w3ls-form">
+				<form method="post">
+				{% csrf_token %}
+        {{form.as_p}}
+					<input type="submit" value="Book" />
+				</form>
+			</div>
+    </div>
+  </div>
+  </div> -->
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-truck w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Anywhere, anytime</p>
+      <p>Daily commute. Errand across town. Early morning flight. Late night drinks. Wherever you’re headed, count on Uber for a ride—no reservations required..</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heartbeat w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Your Safety First</p>
+      <p>Keep your loved ones informed
+about your travel routes or call
+emergency services when in need</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-inr w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Low-cost to luxury</p>
+      <p>Economy cars at everyday prices are always available. For special occasions, no occasion at all, or when you just a need a bit more room, call a black car or SUV.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">24/7 Customer Support</p>
+      <p>
+A dedicated 24x7 customer
+support team always at your
+service to help solve any problem</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="content" id="team">
+       <div class="container">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb40 text-center">
+
+                       <h1>Director List</h1>
+
+               </div>
+           </div>
+           <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                   <!-- team-img -->
+                   <div class="team-block">
+                       <div class="team-img">
+                           <img src="/static/home/images/nitesh.png" alt="">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">NITESH</h4>
+                               <p class="team-meta">- Producer</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+                                   <h4 class="mb0 text-white">NITESH</h4>
+                                   <p class="mb30 team-meta">- Producer</p>
+                                   <p>I congratulate to user for using this website.Its user-friendly and very convenient to use.This is very useful website for those who want to send their goods from one place to another.Thanks for co-operation</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- /.team-img -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                   <!-- team-img -->
+                   <div class="team-block">
+                       <div class="team-img">
+                           <img src="/static/home/images/hardik.png" alt="">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">HARDIK</h4>
+                               <p class="team-meta">- Creative Director</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+                                   <h4 class="mb0 text-white">HARDIK</h4>
+                                   <p class="mb30 team-meta">- Creative Director</p>
+                                   <p>I congratulate to user for using this website.Its user-friendly and very convenient to use.This is very useful website for those who want to send their goods from one place to another.Thanks for co-operation</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- /.team-img -->
+                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                   <!-- team-img -->
+                   <div class="team-block">
+                       <div class="team-img">
+                           <img src="/static/home/images/dikshant.png" alt="" class="img-fluid">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">DIKSHANT</h4>
+                               <p class="team-meta">- Project Manager</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+                                   <h4 class="mb0 text-white">DIKSHANT</h4>
+                                   <p class="mb30 team-meta">- Project Manager</p>
+                                   <p>I congratulate to user for using this website.Its user-friendly and very convenient to use.This is very useful website for those who want to send their goods from one place to another.Thanks for co-operation</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- /.team-img -->
+                 <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> -->
+                   <!-- team-img -->
+                   <!-- <div class="team-block">
+                       <div class="team-img">
+                           <img src="/static/home/images/altaf.png" alt="" class="img-fluid">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">ALTAF</h4>
+                               <p class="team-meta">- Producer</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+
+                                   <h4 class="text-white mb0">ALTAF</h4>
+                                   <p class="mb30 team-meta">- Producer</p>
+                                   <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam egete euismod justam ac temlibern rutrum nisli in mi rhoncac pharetra odioacin ntesque dictum vel risus quis egeaecenas necese purus quaroin tincidunt neque malesuda vulputate lecton pretiume.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div> -->
+               <!-- </div> -->
+               <!-- /.team-img -->
+                  <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> -->
+                   <!-- team-img -->
+                   <!-- <div class="team-block">
+                       <div class="team-img">
+                           <img src="/static/home/images/umesh.png" alt="" class="img-fluid">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">UMESH</h4>
+                               <p class=" mb30 team-meta">- Creative Director</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+                                   <h4 class="text-white mb0">Derek Bybee</h4>
+                                   <p class=" mb30 team-meta">- Creative Director</p>
+                                   <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam egete euismod justam ac temlibern rutrum nisli in mi rhoncac pharetra odioacin ntesque dictum vel risus quis egeaecenas necese purus quaroin tincidunt neque malesuda vulputate lecton pretiume.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div> -->
+               <!-- </div> -->
+               <!-- /.team-img -->
+                  <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> -->
+                   <!-- team-img -->
+                   <!-- <div class="team-block">
+                       <div class="team-img">
+                           <img src="https://easetemplate.com/free-website-templates/motion/images/team_member_6.jpg" alt="" class="img-fluid">
+                           <div class="team-content">
+                               <h4 class="text-white mb0">Lucille Webster</h4>
+                               <p class=" mb30 team-meta">- Cinematographer + Steadicam Operator</p>
+                           </div>
+                           <div class="overlay">
+                               <div class="text">
+                                   <h4 class="text-white mb0">Lucille Webster</h4>
+                                   <p class="team-meta">- Cinematographer + Steadicam Operator</p>
+                                   <p>Mauris tincidunt dolor eget diam dapibus vitae finibusnisl friuisque pretiuam egete euismod justam ac temlibern rutrum nisli in mi rhoncac pharetra odioacin ntesque dictum vel risus quis egeaecenas necese purus quaroin tincidunt neque malesuda vulputate lecton pretiume.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div> -->
+               <!-- </div> -->
+               <!-- /.team-img -->
+           </div>
+         </div>
+
+</div
+<!-- Contact Section -->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <!-- <a id="myCarousel" href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+
+
+{% endblock %}
